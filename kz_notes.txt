@@ -1,0 +1,11 @@
+TODO:
+1. change the corresponding omm/omm_growth in cosmolike: DONE? I think only IA need the change. The lens_kernal should be omm_geo
+2. change the G_equation for w0wa. DONE
+
+3. Not sure why EuclidEmu chains always terminates without error message
+4. switch to halofit? DONE
+
+5. Add DES-Y5 (z>0.1) chains
+
+DONE:
+1. make the new omega_growth into cobaya/cosmolike (this took much longer than i expect)

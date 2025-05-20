@@ -94,9 +94,10 @@ void set_baryon_pcs(arma::Mat<double> eigenvectors)
 
 void set_cosmology(
     const double omega_matter,
+    const double omega_matter_growth,
     const double hubble,
     std::vector<double> io_log10k_2D,
-    std::vector<double> io_z_2D, 
+    std::vector<double> io_z_2D,
     std::vector<double> io_lnP_linear,
     std::vector<double> io_lnP_nonlinear,
     std::vector<double> io_G,
@@ -106,7 +107,7 @@ void set_cosmology(
 {
   spdlog::debug("\x1b[90m{}\x1b[0m: Begins", "set_cosmology");
 
-  cosmolike_interface::set_cosmological_parameters(omega_matter, hubble);
+  cosmolike_interface::set_cosmological_parameters(omega_matter, omega_matter_growth, hubble);
 
   cosmolike_interface::set_linear_power_spectrum(
     arma::conv_to<arma::Col<double>>::from(io_log10k_2D),
@@ -340,6 +341,7 @@ PYBIND11_MODULE(cosmolike_des_y3_interface, m)
       &set_cosmology,
       "Set Cosmological Paramters, Distance, Matter Power Spectrum, Growth Factor",
        py::arg("omegam").none(false),
+       py::arg("omegam_growth").none(false),
        py::arg("H0").none(false),
        py::arg("log10k_2D").none(false),
        py::arg("z_2D").none(false),

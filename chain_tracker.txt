@@ -1,0 +1,48 @@
+MCMC1: 3x2pt chain, to directly compare with desi paper. note a few important changes, including using the, and NLA model, redmegic, and other? Halo-fit first
+
+MCMC2: 3x2pt chain, to directly compare with desi paper. note a few important changes, including using the, and NLA model, redmegic, and other? Euclid emu, change of prior
+
+MCMC3: cosmic shear; still no gg-split
+
+MCMC4: gg-splie; cosmic shear;
+
+MCMC5: gg-splie; cosmic shear+SN-desy5;
+
+MCMC6: same as mcmc2, but to test if inv_fisher as covmat saves time
+
+MCMC7: pyhalofit; cosmic shear; no-ggsplit
+
+MCMC8: pyhalofit; cosmic shear; with ggsplit
+
+MCMC9: pyhalofit; 3x2pt; with ggsplit
+
+MCMC10: cosmicshear, gg-split, des_y5 no cut
+
+MCMC11: cosmicshear, gg-split, des_y5 z cut=0.1
+
+MCMC12: cosmicshear, gg-split, des_y5 z cut=0.15
+
+MCMC13: cosmicshear, gg-split, des_y5 z cut=0.2
+
+MCMC14: Nautilus 3x2pt chain; mainly for test
+
+MCMC15: cosmicshear, gg-split, des_y5 no cut, plus primary CMB
+
+MCMC16: cosmicshear, gg-split, des_y5 no cut, plus FULL CMB
+
+MCMC17: CS, des_y5-z>0.1, plus primary CMB
+
+MCMC18: CS, des_y5-z>0.1, full CMB
+
+MCMC19: Nautilus 3x2pt; mainly for test; lower n_live
+
+MCMC20: 3x2pt, des_y5 no cut
+
+MCMC21: 3x2pt, des_y5 (z>0.1)
+
+MCMC22: Updated xi_pm; same as MCMC8 otherwise
+
+
+
+
+
